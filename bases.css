@@ -1,0 +1,65 @@
+body, html {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  font-size: 1em;
+  font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+  text-align: center;
+  height: 3em;
+}
+
+section, footer {
+  font-family: 'Roboto','Courier New', Courier, monospace, sans-serif;
+}
+
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+section a {
+  color: black;
+}
+
+footer {
+  background: #353535;
+  padding: 1em;
+}
+
+footer a {
+  color: white;
+}
+
+.logofooter {
+  font-size: 1em;
+  color: white;
+  font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+}
+
+.iconsfooter {
+  padding-right: 0.5em;
+}
+
+img {
+  width: 100%;
+  max-height: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dkw {
+  width: 100%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=bases.css.map */

@@ -1,0 +1,100 @@
+
+.location 
+{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(234, 234, 234);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: -15px;
+}
+
+.fa-map-marker-alt
+{
+    padding-right: 15px;
+}
+
+.reservation 
+{
+    background-color: $color-background;
+    text-align: center;
+    padding: 2em;
+    font-size: 1em;
+}
+
+.explore
+{
+    border-radius: 40px;
+    background: linear-gradient($color-secondary,$color-primary);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+.functions
+{
+    padding: 0.5em;
+    display: inline;
+}
+.titlefunctions
+{
+    padding-left: 1em;
+}
+
+.stepsnumbers
+{
+  border-radius: 2em;
+  width:1em;
+  background-color: $color-primary;
+  color: white;
+  padding:0.5em;
+  font-size: 0.9em;
+  margin-left: -1.8em;
+}
+.steps
+{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2em;
+    padding:0.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 1em;
+    background: $color-background;
+}
+.stepsicons
+{
+    color: grey;
+    padding: 1.1em;
+
+}
+.restaurants
+{
+    background: $color-background;
+    padding-bottom: 2em;
+}
+.card
+{
+    border-radius: 2em;
+    margin-bottom: 1em;
+}
+.txt-card
+{
+    padding-top: 0.5em;
+    padding-left:0.5em;
+    line-height: 0.5em;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+
+}
+.fa-heart:hover
+{
+    background: linear-gradient($color-secondary,$color-primary);
+}
+
+
+
+
+
+
+
