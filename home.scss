@@ -1,58 +1,45 @@
 
-.location 
-{
+.location {
     font-size: 1.2em;
     text-align: center;
     background-color: rgb(234, 234, 234);
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: -15px;
-}
+    padding-left: -15px;}
 
-.fa-map-marker-alt
-{
-    padding-right: 15px;
-}
+.fa-map-marker-alt{
+    padding-right: 15px;}
 
-.reservation 
-{
+.reservation {
     background-color: $color-background;
     text-align: center;
     padding: 2em;
-    font-size: 1em;
-}
+    font-size: 1em;}
 
-.explore
-{
+.explore{
     border-radius: 40px;
     background: linear-gradient($color-secondary,$color-primary);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    color: white;
-}
+    color: white;}
 
-.functions
-{
+.functions{
     padding: 0.5em;
-    display: inline;
-}
-.titlefunctions
-{
-    padding-left: 1em;
-}
+    display: inline;}
 
-.stepsnumbers
-{
+.titlefunctions{
+    padding-left: 1em;}
+
+.stepsnumbers{
   border-radius: 2em;
+  height: 1em;
   width:1em;
   background-color: $color-primary;
   color: white;
   padding:0.5em;
   font-size: 0.9em;
-  margin-left: -1.8em;
-}
-.steps
-{
+  margin-left: -1.8em;}
+.steps{
     display: flex;
     flex-wrap: wrap;
     border-radius: 2em;
@@ -60,36 +47,34 @@
     margin-bottom: 1em;
     margin-left: 2em;
     margin-right: 1em;
-    background: $color-background;
-}
-.stepsicons
-{
+    background: $color-background;}
+.stepsicons{
     color: grey;
-    padding: 1.1em;
+    padding: 1.1em;}
 
-}
-.restaurants
-{
+
+.restaurants{
     background: $color-background;
     padding-bottom: 2em;
-}
-.card
-{
+    padding-top: 1.5em;}
+
+.card{
     border-radius: 2em;
     margin-bottom: 1em;
 }
-.txt-card
-{
-    padding-top: 0.5em;
-    padding-left:0.5em;
-    line-height: 0.5em;
-    border-radius: 0px 0px 20px 20px;
-    background-color: white;
 
+.txt-card{
+    padding: 0.5em;
+    line-height: 0.4em;
+    border-radius: 0px 0px 20px 20px;
+    background-color:white;
 }
-.fa-heart:hover
+.fa-heart
 {
-    background: linear-gradient($color-secondary,$color-primary);
+    float: right;
+    padding-right: 1.5em;
+    padding-top:0.8em;
+    font-size: 1.3em;
 }
 
 

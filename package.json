@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "url": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maite-btlr/MaiteBoutillier_3_03122020.git"
+  },
+  "keywords": [
+    "AMOUR"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maite-btlr/MaiteBoutillier_3_03122020/issues"
+  },
+  "homepage": "https://github.com/Maite-btlr/MaiteBoutillier_3_03122020#readme"
+}

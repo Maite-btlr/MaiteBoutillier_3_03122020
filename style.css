@@ -6,29 +6,27 @@ body, html {
 header {
   background-color: white;
   font-size: 1em;
-  font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   text-align: center;
   height: 3em;
 }
 
 section, footer {
-  font-family: 'Roboto','Courier New', Courier, monospace, sans-serif;
+  font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
 }
 
 section {
   padding-left: 1em;
   padding-right: 1em;
 }
-
 section a {
   color: black;
 }
 
 footer {
   background: #353535;
-  padding: 1em;
+  padding: 1.2em;
 }
-
 footer a {
   color: white;
 }
@@ -36,7 +34,7 @@ footer a {
 .logofooter {
   font-size: 1em;
   color: white;
-  font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
 }
 
 .iconsfooter {
@@ -45,17 +43,15 @@ footer a {
 
 img {
   width: 100%;
-  max-height: 25%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 160px;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 .dkw {
   width: 100%;
-  max-height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 160px;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -85,7 +81,6 @@ a {
 
 .explore {
   border-radius: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -103,6 +98,7 @@ a {
 
 .stepsnumbers {
   border-radius: 2em;
+  height: 1em;
   width: 1em;
   background-color: #9356DC;
   color: white;
@@ -112,11 +108,8 @@ a {
 }
 
 .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border-radius: 2em;
   padding: 0.5em;
   margin-bottom: 1em;
@@ -133,6 +126,7 @@ a {
 .restaurants {
   background: #f6f6f6;
   padding-bottom: 2em;
+  padding-top: 1.5em;
 }
 
 .card {
@@ -141,15 +135,17 @@ a {
 }
 
 .txt-card {
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-  line-height: 0.5em;
+  padding: 0.5em;
+  line-height: 0.4em;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
 }
 
-.fa-heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+.fa-heart {
+  float: right;
+  padding-right: 1.5em;
+  padding-top: 0.8em;
+  font-size: 1.3em;
 }
+
 /*# sourceMappingURL=style.css.map */
