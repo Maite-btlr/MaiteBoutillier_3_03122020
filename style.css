@@ -32,7 +32,7 @@ footer a {
 }
 
 .logofooter {
-  font-size: 1em;
+  font-size: 1.2em;
   color: white;
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
 }
@@ -41,7 +41,7 @@ footer a {
   padding-right: 0.5em;
 }
 
-img {
+.visual {
   width: 100%;
   max-height: 160px;
   object-fit: cover;
@@ -85,6 +85,8 @@ a {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   color: white;
+  width: 70%;
+  margin: auto;
 }
 
 .functions {
@@ -146,6 +148,94 @@ a {
   padding-right: 1.5em;
   padding-top: 0.8em;
   font-size: 1.3em;
+}
+
+.header-menu {
+  display: inline-flex;
+  height: 5em;
+  position: relative;
+  background-color: white;
+  font-size: 1em;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.header-menu .fa-arrow-left {
+  float: left;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+.header-menu .logo {
+  margin: auto;
+}
+
+.picture {
+  width: 100%;
+}
+.picture .dkw {
+  height: 100px;
+}
+
+.seemenu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -3.5em;
+  position: relative;
+}
+
+.top {
+  display: flex;
+}
+.top .menu_name {
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
+  font-size: 1.6em;
+  padding-top: 0.8em;
+}
+.top .fa-heart {
+  padding-left: 1em;
+  padding-top: 2.4em;
+}
+
+.choice {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  height: 5em;
+}
+.choice .price {
+  float: right;
+  margin-top: -0.2em;
+  padding-right: 1em;
+}
+.choice .subtitle {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.SORT {
+  padding: 0.6em;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.btn-order {
+  font-family: "Roboto";
+  background-color: #f6f6f6;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.btn-order .order {
+  border-radius: 40px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */

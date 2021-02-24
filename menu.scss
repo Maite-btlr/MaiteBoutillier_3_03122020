@@ -1,0 +1,90 @@
+.header-menu{
+    display: inline-flex;
+    height: 5em;
+    position: relative;
+    background-color: white;
+    font-size: 1em;
+    font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    .fa-arrow-left{
+        float: left;
+        margin-top: 1.5em;
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+    .logo{
+       margin: auto;
+    }
+
+}
+
+.picture {
+    width:100%;
+    .dkw{
+        height: 100px;
+    }
+}
+.seemenu{
+    background-color: $color-background;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -3.5em;
+    position: relative;
+}
+.top{
+    display: flex;
+    
+    .menu_name{
+        font-family: 'Shrikhand','Courier New', Courier, monospace, sans-serif;
+        font-size: 1.6em;
+        padding-top: 0.8em;
+    }
+    .fa-heart{
+        padding-left: 1em;
+        padding-top: 2.4em;
+    }  
+}
+
+.choice{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    height: 5em;
+    .price{
+        float: right;
+        margin-top: -0.2em;
+        padding-right: 1em;
+    }
+    .subtitle{
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.SORT{
+    padding:0.6em;
+    border-bottom: 3px solid $color-tertiary;
+    
+}
+
+.btn-order{
+    font-family:'Roboto';
+    background-color: $color-background;
+    padding-top: 3em;
+    padding-bottom:3em ;
+        .order{
+        border-radius: 40px;
+        background: linear-gradient($color-secondary,$color-primary);
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        color: white;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+        }
+    }
+
+
