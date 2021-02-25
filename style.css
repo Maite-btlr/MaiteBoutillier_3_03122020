@@ -3,15 +3,14 @@ body, html {
   margin: 0;
 }
 
-header {
+.logo {
   background-color: white;
-  font-size: 1em;
-  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   text-align: center;
-  height: 3em;
+  font-size: 2em;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
 }
 
-section, footer {
+section, footer, .location {
   font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
 }
 
@@ -46,6 +45,7 @@ footer a {
   max-height: 160px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  position: relative;
 }
 
 .dkw {
@@ -53,6 +53,7 @@ footer a {
   max-height: 160px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  position: relative;
 }
 
 a {
@@ -65,7 +66,6 @@ a {
   background-color: #eaeaea;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: -15px;
 }
 
 .fa-map-marker-alt {
@@ -135,39 +135,46 @@ a {
   border-radius: 2em;
   margin-bottom: 1em;
 }
-
-.txt-card {
+.card .txt-card {
   padding: 0.5em;
   line-height: 0.4em;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
 }
-
-.fa-heart {
+.card .fa-heart {
   float: right;
   padding-right: 1.5em;
   padding-top: 0.8em;
   font-size: 1.3em;
 }
 
+#top-new {
+  padding: 0.4em 0.8em 0.4em 0.8em;
+  color: #278870;
+  background-color: #99E2D0;
+  float: right;
+  margin-top: 0.7em;
+  position: absolute;
+  right: 2em;
+  font-size: 0.9em;
+}
+
 .header-menu {
-  display: inline-flex;
-  height: 5em;
+  text-align: center;
+  height: 3.5em;
   position: relative;
   background-color: white;
   font-size: 1em;
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
 }
 .header-menu .fa-arrow-left {
   float: left;
-  margin-top: 1.5em;
-  margin-left: 1em;
+  margin-top: 0.7em;
   font-size: 1.5em;
 }
 .header-menu .logo {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .picture {
@@ -193,20 +200,23 @@ a {
   padding-top: 0.8em;
 }
 .top .fa-heart {
-  padding-left: 1em;
-  padding-top: 2.4em;
+  padding-left: 20%;
+  padding-top: 2em;
+  font-size: 1.5em;
 }
 
 .choice {
   background-color: white;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
+  padding-left: 0.5em;
+  margin-bottom: 0.8em;
   border-radius: 20px;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
   height: 5em;
 }
 .choice .price {
   float: right;
-  margin-top: -0.2em;
+  margin-top: 0.1em;
   padding-right: 1em;
 }
 .choice .subtitle {
@@ -215,10 +225,17 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.choice .plate {
+  font-size: 1.2em;
+  margin-bottom: -0.5em;
+}
 
 .SORT {
-  padding: 0.6em;
+  margin: 0.5em;
+  margin-bottom: 1em;
+  padding-bottom: 0.2em;
   border-bottom: 3px solid #99E2D0;
+  width: 15%;
 }
 
 .btn-order {
