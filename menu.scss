@@ -17,8 +17,18 @@
 }
 .picture {
     width:100%;
+    @media (min-width:1024px) 
+         {
+             object-fit: COVER;
+           height: 300px;
+         }
+
     .dkw{
         height: 100px;
+        @media (min-width:1024px) 
+         {
+           height: 50%;
+         }
     }
 }
 .seemenu{
@@ -39,6 +49,10 @@
         padding-left: 20%;
         padding-top: 2em;
         font-size: 1.5em;
+        @media (min-width:1024px) 
+         {
+          padding-left: 35em;
+         }
     }  
 }
 .choice{
@@ -62,7 +76,7 @@
     }
     .plate{
         font-size: 1.2em;
-        margin-bottom:-0.5em;
+
     }
 }
 
@@ -71,7 +85,7 @@
     margin-bottom: 1em;
     padding-bottom: 0.2em;
     border-bottom: 3px solid $color-tertiary;
-    width:15%;
+    width:2.5em;
 }
 
 .btn-order{
