@@ -52,7 +52,12 @@
   color: white;
   padding:0.5em;
   font-size: 0.9em;
-  margin-left: -1.8em;}
+  margin-left: -1.8em;
+  @media (min-width:1024px) 
+         {
+             display: none;
+         }
+}
   
 .steps{
     display: flex;
@@ -122,9 +127,6 @@ background-color: white;
           display: none;
          }
 }
-
-
-
 
 
 
