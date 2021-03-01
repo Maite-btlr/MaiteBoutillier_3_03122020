@@ -3,6 +3,7 @@ body, html
     width: 100%; 
     margin: 0;
 }
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -58,7 +59,6 @@ footer{
     max-height: 160px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-   
 }
 
 a{

@@ -22,6 +22,7 @@
     padding-bottom: 0.5em;
     width:70%;
     margin: auto;
+    box-shadow:0 0 4px grey;
          a{color: white;}
          @media (min-width:1024px) 
          {
@@ -29,6 +30,13 @@
              width: 30%;
          }
 }
+.explore:hover{
+    box-shadow:0 0 7px grey;
+        opacity: 0.9;
+        cursor: pointer;
+}
+
+
 .functions{
     padding: 0.5em;
     display: inline;
@@ -62,7 +70,7 @@
 .steps{
     display: flex;
     flex-wrap: wrap;
-    border-radius: 2em;
+    border-radius: 1.5em;
     padding:0.5em;
     margin-bottom: 1em;
     margin-left: 2em;
@@ -127,6 +135,5 @@ background-color: white;
           display: none;
          }
 }
-
 
 

@@ -15,22 +15,30 @@
         margin: 0 auto;
     }
 }
+
 .picture {
     width:100%;
+    max-height: 350px;
+    object-fit: COVER;
     @media (min-width:1024px) 
          {
-             object-fit: COVER;
-           height: 300px;
+        object-fit: COVER;
+        height: 300px;
          }
 
     .dkw{
-        height: 100px;
+        object-fit: COVER;
+        max-height: 350px;
+        @media (max-width:400px) {
+            height: 180px;
+        }
         @media (min-width:1024px) 
          {
-           height: 50%;
+           height: 300px;
          }
     }
 }
+
 .seemenu{
     background-color: $color-background;
     border-radius: 40px 40px 0px 0px;
@@ -46,8 +54,9 @@
         padding-top: 0.8em;
     }
     .fa-heart{
-        padding-left: 20%;
-        padding-top: 2em;
+        position: absolute;
+        right: 7%;
+        top:3%;
         font-size: 1.5em;
         @media (min-width:1024px) 
          {
@@ -55,6 +64,7 @@
          }
     }  
 }
+
 .choice{
     background-color: white;
     padding-bottom: 0.1em;
@@ -92,7 +102,8 @@
     font-family:'Roboto';
     background-color: $color-background;
     padding-top: 3em;
-    padding-bottom:3em ;
+    padding-bottom:3em;
+    
         .order{
         border-radius: 40px;
         background: linear-gradient($color-secondary,$color-primary);
@@ -102,7 +113,14 @@
         text-align: center;
         width: 50%;
         margin-left: 25%;
+        box-shadow:0 0 4px grey;
         }
+    }
+
+.order:hover{
+        box-shadow:0 0 8px grey;
+        opacity: 0.9;
+        cursor: pointer;
     }
 
 

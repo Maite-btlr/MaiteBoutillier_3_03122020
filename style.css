@@ -89,6 +89,7 @@ a {
   padding-bottom: 0.5em;
   width: 70%;
   margin: auto;
+  box-shadow: 0 0 4px grey;
 }
 .explore a {
   color: white;
@@ -98,6 +99,12 @@ a {
     text-align: center;
     width: 30%;
   }
+}
+
+.explore:hover {
+  box-shadow: 0 0 7px grey;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .functions {
@@ -134,7 +141,7 @@ a {
 .steps {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 2em;
+  border-radius: 1.5em;
   padding: 0.5em;
   margin-bottom: 1em;
   margin-left: 2em;
@@ -226,6 +233,8 @@ a {
 
 .picture {
   width: 100%;
+  max-height: 350px;
+  object-fit: COVER;
 }
 @media (min-width: 1024px) {
   .picture {
@@ -234,11 +243,17 @@ a {
   }
 }
 .picture .dkw {
-  height: 100px;
+  object-fit: COVER;
+  max-height: 350px;
+}
+@media (max-width: 400px) {
+  .picture .dkw {
+    height: 180px;
+  }
 }
 @media (min-width: 1024px) {
   .picture .dkw {
-    height: 50%;
+    height: 300px;
   }
 }
 
@@ -258,8 +273,9 @@ a {
   padding-top: 0.8em;
 }
 .top .fa-heart {
-  padding-left: 20%;
-  padding-top: 2em;
+  position: absolute;
+  right: 7%;
+  top: 3%;
   font-size: 1.5em;
 }
 @media (min-width: 1024px) {
@@ -315,12 +331,20 @@ a {
   text-align: center;
   width: 50%;
   margin-left: 25%;
+  box-shadow: 0 0 4px grey;
 }
 
+.order:hover {
+  box-shadow: 0 0 8px grey;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* LOADING SPINNER HOME PAGE*/
 .loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 350%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
@@ -331,13 +355,13 @@ a {
   color: #9356DC;
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   font-size: 50px;
-  margin-bottom: 1800px;
+  margin-bottom: 50px;
   animation: flash 1s linear infinite;
 }
 @media (min-width: 1024px) {
   .loader .lettre {
     font-size: 80px;
-    margin-bottom: 2280px;
+    margin-bottom: 80px;
   }
 }
 
@@ -388,8 +412,8 @@ a {
 }
 
 .loader {
-  z-index: 9999;
-  position: FIXED;
+  z-index: 99999;
+  position: absolute;
   animation: byebye 5s both;
 }
 
@@ -399,6 +423,35 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+.menu:nth-child(2) {
+  animation: appear 0.4s;
+  animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+.menu:nth-child(3) {
+  animation: appear 0.4s;
+  animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+
+.menu:nth-child(4) {
+  animation: appear 0.4s;
+  animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
