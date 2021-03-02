@@ -23,6 +23,11 @@
     width:70%;
     margin: auto;
     box-shadow:0 0 4px grey;
+    &:hover{
+        box-shadow:0 0 7px grey;
+        opacity: 0.9;
+        cursor: pointer;
+    }
          a{color: white;}
          @media (min-width:1024px) 
          {
@@ -30,12 +35,6 @@
              width: 30%;
          }
 }
-.explore:hover{
-    box-shadow:0 0 7px grey;
-        opacity: 0.9;
-        cursor: pointer;
-}
-
 
 .functions{
     padding: 0.5em;

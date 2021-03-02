@@ -91,6 +91,11 @@ a {
   margin: auto;
   box-shadow: 0 0 4px grey;
 }
+.explore:hover {
+  box-shadow: 0 0 7px grey;
+  opacity: 0.9;
+  cursor: pointer;
+}
 .explore a {
   color: white;
 }
@@ -99,12 +104,6 @@ a {
     text-align: center;
     width: 30%;
   }
-}
-
-.explore:hover {
-  box-shadow: 0 0 7px grey;
-  opacity: 0.9;
-  cursor: pointer;
 }
 
 .functions {
@@ -224,6 +223,7 @@ a {
 }
 .header-menu .fa-arrow-left {
   float: left;
+  color: black;
   margin-top: 0.7em;
   font-size: 1.5em;
 }
@@ -254,6 +254,7 @@ a {
 @media (min-width: 1024px) {
   .picture .dkw {
     height: 300px;
+    width: 240px;
   }
 }
 
@@ -286,9 +287,7 @@ a {
 
 .choice {
   background-color: white;
-  padding-bottom: 0.1em;
-  padding-top: 0.1em;
-  padding-left: 0.5em;
+  padding-left: 1em;
   margin-bottom: 0.8em;
   border-radius: 20px;
   height: 5em;
@@ -296,16 +295,22 @@ a {
 .choice .price {
   float: right;
   margin-top: 0.1em;
-  padding-right: 1em;
+  padding-right: 2.2em;
 }
 .choice .subtitle {
   width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 .choice .plate {
   font-size: 1.2em;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  position: relative;
 }
 
 .SORT {
@@ -333,8 +338,7 @@ a {
   margin-left: 25%;
   box-shadow: 0 0 4px grey;
 }
-
-.order:hover {
+.btn-order .order:hover {
   box-shadow: 0 0 8px grey;
   opacity: 0.9;
   cursor: pointer;
@@ -425,6 +429,7 @@ a {
     opacity: 0;
   }
 }
+/*APPEAR MENU*/
 .menu:nth-child(2) {
   animation: appear 0.4s;
   animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
@@ -453,6 +458,33 @@ a {
   100% {
     transform: scale(1);
   }
+}
+/* SLIDE IN MENU*/
+.choice {
+  display: flex;
+}
+
+.slide-in {
+  display: flex;
+  color: white;
+  font-size: 0%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.choice:hover .slide-in {
+  width: 5%;
+  color: white;
+  background-color: #99E2D0;
+  font-size: 1.5em;
+  padding: 3%;
+  border-radius: 0px 20px 20px 0px;
+  float: right;
+  margin-left: -30px;
+}
+
+.txt-choice {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
