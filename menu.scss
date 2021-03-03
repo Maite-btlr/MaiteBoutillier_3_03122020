@@ -72,29 +72,36 @@
     padding-left: 1em;
     margin-bottom: 0.8em;
     border-radius: 20px;
-    height: 5em;
+    height: 4.8em;
     .price{
         float: right;
         margin-top: 0.1em;
-        padding-right: 2.2em;
-        
+        margin-right: 3em;
+        position: relative;
+        font-weight: bold;
     }
     .subtitle{
+        font-weight:lighter;
+        position:absolute;
         width: 80%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         margin: 0;
-        padding-bottom: 0.5em;
-
+        @media (min-width:320px) 
+         {
+          width: 60%;
+         }
     }
     .plate{
-        font-size: 1.2em;
+        font-weight: bold;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         padding-top: 0.7em;
         padding-bottom: 0.5em;
         margin: 0;
-        position: relative;
-
     }
 }
 

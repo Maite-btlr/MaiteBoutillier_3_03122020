@@ -16,6 +16,7 @@
     font-size: 1em;}
 
 .explore{
+    font-weight: bold;
     border-radius: 40px;
     background: linear-gradient($color-secondary,$color-primary);
     padding-top: 0.5em;
@@ -43,6 +44,7 @@
 
 .titlefunctions{
     padding-left: 1em;
+    font-weight: bold;
     @media (min-width:1024px) 
          {
              text-align:center;
@@ -75,11 +77,20 @@
     margin-left: 2em;
     margin-right: 1em;
     background: $color-background;
+    &:hover{
+        box-shadow: 0 0 10px lightgray;
+        background: rgb(248,237,258);
+        cursor: pointer;
+        .stepsicons{
+            color: $color-primary;
+        }
+    }
     @media (min-width:1024px) 
          {
              justify-content: center;
              letter-spacing: 0.1em;
          }
+         
 }
 
 .stepsicons{
@@ -119,6 +130,15 @@ background-color: white;
              padding-top:0.8em;
              font-size: 1.3em;
 }}
+.places{
+    font-weight: bold;
+}
+.suburb{
+    font-weight: lighter;
+}
+.txt-explore{
+    font-weight: lighter;
+}
 
 #top-new{
     padding:0.4em 0.8em 0.4em 0.8em;
