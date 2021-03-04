@@ -78,7 +78,8 @@ a {
 .reservation {
   background-color: #f6f6f6;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
+  padding-bottom: 2em;
   font-size: 1em;
 }
 
@@ -86,8 +87,7 @@ a {
   font-weight: bold;
   border-radius: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 0.5em;
   width: 70%;
   margin: auto;
   box-shadow: 0 0 4px grey;
@@ -185,6 +185,7 @@ a {
   border-radius: 2em;
   margin-bottom: 1em;
   background-color: white;
+  box-shadow: 0 0 7px lightgrey;
 }
 @media (min-width: 1024px) {
   .card {
@@ -199,12 +200,6 @@ a {
   border-radius: 0px 0px 20px 20px;
   background-color: white;
 }
-.card .fa-heart {
-  float: right;
-  padding-right: 1.5em;
-  padding-top: 0.8em;
-  font-size: 1.3em;
-}
 
 .places {
   font-weight: bold;
@@ -218,7 +213,7 @@ a {
   font-weight: lighter;
 }
 
-#top-new {
+#top-new, #top-new2 {
   padding: 0.4em 0.8em 0.4em 0.8em;
   color: #278870;
   background-color: #99E2D0;
@@ -229,7 +224,7 @@ a {
   font-size: 0.9em;
 }
 @media (min-width: 1024px) {
-  #top-new {
+  #top-new, #top-new2 {
     display: none;
   }
 }
@@ -312,7 +307,8 @@ a {
   padding-left: 1em;
   margin-bottom: 0.8em;
   border-radius: 20px;
-  height: 4.8em;
+  height: 4.4em;
+  box-shadow: 0 0 7px lightgrey;
 }
 .choice .price {
   float: right;
@@ -464,21 +460,21 @@ a {
 }
 /*APPEAR MENU*/
 .menu:nth-child(2) {
-  animation: appear 0.4s;
+  animation: appear 0.3s;
   animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
   animation-fill-mode: both;
   animation-delay: 0.2s;
 }
 
 .menu:nth-child(3) {
-  animation: appear 0.4s;
+  animation: appear 0.3s;
   animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
   animation-fill-mode: both;
   animation-delay: 0.4s;
 }
 
 .menu:nth-child(4) {
-  animation: appear 0.4s;
+  animation: appear 0.3s;
   animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
   animation-fill-mode: both;
   animation-delay: 0.6s;
@@ -505,6 +501,9 @@ a {
   transition: 0.4s ease-in-out;
 }
 
+.choice:hover {
+  cursor: pointer;
+}
 .choice:hover .slide-in {
   width: 5%;
   color: white;
@@ -523,5 +522,38 @@ a {
 .txt-choice {
   width: 100%;
 }
+
+/*HEART HOME*/
+.hearts {
+  float: right;
+  font-size: 1.2em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+}
+.hearts .empty-heart {
+  position: absolute;
+  opacity: 1;
+}
+.hearts .fill-heart {
+  position: relative;
+  opacity: 1;
+}
+.hearts .fill-heart:hover {
+  animation: lova 1s ease-in-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes lova {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*HEART MENU*/
 
 /*# sourceMappingURL=style.css.map */

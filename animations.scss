@@ -74,19 +74,19 @@
 /*APPEAR MENU*/
 
 .menu:nth-child(2){
-    animation: appear 0.4s;
+    animation: appear 0.3s;
     animation-timing-function:cubic-bezier(0.79, 0.33, 0.14, 0.53);
     animation-fill-mode: both;
     animation-delay: 0.2s;
 }
 .menu:nth-child(3){
-    animation: appear 0.4s;
+    animation: appear 0.3s;
     animation-timing-function:cubic-bezier(0.79, 0.33, 0.14, 0.53);
     animation-fill-mode: both;
     animation-delay: 0.4s;
 }
 .menu:nth-child(4){
-    animation: appear 0.4s;
+    animation: appear 0.3s;
     animation-timing-function:cubic-bezier(0.79, 0.33, 0.14, 0.53);
     animation-fill-mode: both;
     animation-delay: 0.6s;
@@ -99,7 +99,6 @@
         transform: scale(1);
     }
 }
-
 
 /* SLIDE IN MENU*/
 
@@ -116,6 +115,7 @@
 }
 
 .choice:hover{
+    cursor: pointer;
     .slide-in{
         width: 5%;
         color:white;
@@ -135,3 +135,32 @@
 .txt-choice{
     width:100%;
 }
+
+/*HEART HOME*/
+
+.hearts{
+    float: right;
+    font-size: 1.2em;
+    padding-right: 1.5em;
+    padding-top:0.5em;
+    .empty-heart{
+        position: absolute;
+        opacity: 1;}
+.fill-heart{
+    position: relative;
+    opacity: 1;
+    &:hover{
+    animation: lova 1s ease-in-out;
+    background:$gradient;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+     color: transparent;
+}}}
+
+@keyframes lova{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*HEART MENU*/
+

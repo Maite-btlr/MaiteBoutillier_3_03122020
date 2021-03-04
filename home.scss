@@ -12,15 +12,15 @@
 .reservation {
     background-color: $color-background;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
+    padding-bottom: 2em;
     font-size: 1em;}
 
 .explore{
     font-weight: bold;
     border-radius: 40px;
     background: linear-gradient($color-secondary,$color-primary);
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding: 0.5em;
     width:70%;
     margin: auto;
     box-shadow:0 0 4px grey;
@@ -113,6 +113,7 @@
 border-radius: 2em;
 margin-bottom: 1em;
 background-color: white;
+box-shadow: 0 0 7px lightgrey;
 @media (min-width:1024px) 
          {
              display: inline-flex;
@@ -124,12 +125,7 @@ background-color: white;
     line-height: 0.4em;
     border-radius: 0px 0px 20px 20px;
     background-color:white;}
-            .fa-heart{
-             float: right;
-             padding-right: 1.5em;
-             padding-top:0.8em;
-             font-size: 1.3em;
-}}
+}
 .places{
     font-weight: bold;
 }
@@ -140,7 +136,7 @@ background-color: white;
     font-weight: lighter;
 }
 
-#top-new{
+#top-new,#top-new2{
     padding:0.4em 0.8em 0.4em 0.8em;
     color: darken($color-tertiary,40%);
     background-color: $color-tertiary;
