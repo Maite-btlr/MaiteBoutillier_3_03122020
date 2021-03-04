@@ -185,7 +185,7 @@ a {
   border-radius: 2em;
   margin-bottom: 1em;
   background-color: white;
-  box-shadow: 0 0 7px lightgrey;
+  box-shadow: 3px 3px 7px lightgrey;
 }
 @media (min-width: 1024px) {
   .card {
@@ -308,7 +308,7 @@ a {
   margin-bottom: 0.8em;
   border-radius: 20px;
   height: 4.4em;
-  box-shadow: 0 0 7px lightgrey;
+  box-shadow: 3px 3px 7px lightgrey;
 }
 .choice .price {
   float: right;
@@ -532,7 +532,7 @@ a {
 }
 .hearts .empty-heart {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
 }
 .hearts .fill-heart {
   position: relative;
