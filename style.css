@@ -161,6 +161,8 @@ a {
   .steps {
     justify-content: center;
     letter-spacing: 0.1em;
+    margin-left: 10em;
+    margin-right: 10em;
   }
 }
 
@@ -281,6 +283,12 @@ a {
   margin-top: -3.5em;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .seemenu {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
 
 .top {
   display: flex;
@@ -289,17 +297,6 @@ a {
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   font-size: 1.6em;
   padding-top: 0.8em;
-}
-.top .fa-heart {
-  position: absolute;
-  right: 7%;
-  top: 3%;
-  font-size: 1.5em;
-}
-@media (min-width: 1024px) {
-  .top .fa-heart {
-    padding-left: 35em;
-  }
 }
 
 .choice {
@@ -407,7 +404,7 @@ a {
   }
   90% {
     color: #FF79DA;
-    text-shadow: #FF79DA;
+    text-shadow: 0 0 6px #FF79DA;
   }
   100% {
     color: #9356DC;
@@ -531,23 +528,24 @@ a {
   padding-top: 0.5em;
   cursor: pointer;
 }
-
-.empty {
+.hearts .empty {
   position: absolute;
   font-size: 1.5em;
   color: black;
 }
-
-.full {
+.hearts .full {
   position: absolute;
   font-size: 1.5em;
   -webkit-text-fill-color: transparent;
 }
-.full:hover {
-  animation: lova 1s ease-in-out;
+.hearts:hover .full {
+  animation: lova 0.8s ease-in-out;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
+}
+.hearts:hover .empty {
+  animation: leaving ease-out;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes lova {
@@ -558,6 +556,19 @@ a {
     opacity: 1;
   }
 }
+@keyframes leaving {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*HEART MENU*/
+.hearty {
+  position: absolute;
+  left: 80%;
+  top: 3%;
+}
 
 /*# sourceMappingURL=style.css.map */

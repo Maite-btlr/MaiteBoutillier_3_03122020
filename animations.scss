@@ -31,7 +31,7 @@
     }
     90%{
         color:$color-secondary;
-        text-shadow: $color-secondary;
+        text-shadow: 0 0 6px $color-secondary;
     }
     100%{
         color: $color-primary;
@@ -144,8 +144,7 @@
     display: flex;
     padding-right: 3em;
     padding-top:0.5em;
-    cursor: pointer;
-}    
+    cursor: pointer;   
 .empty{
     position: absolute;
     font-size: 1.5em;
@@ -153,19 +152,31 @@
 .full{
     position: absolute;
     font-size: 1.5em;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;}
          &:hover{
-         animation: lova 1s ease-in-out;
+        .full{
+         animation: lova 0.8s ease-in-out;
          background:$gradient;
-         background-clip: text;
-         -webkit-background-clip: text;
+         -webkit-background-clip: text;}
+         .empty{
+            animation: leaving ease-out;
+            -webkit-text-fill-color:transparent;}
 }}
 
 @keyframes lova{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-
-
+@keyframes leaving{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
 /*HEART MENU*/
+
+.hearty{
+    position: absolute;
+    left: 80%;
+    top: 3%;
+} 
+
 
