@@ -383,12 +383,14 @@ a {
   justify-content: center;
   align-items: center;
   animation-delay: 0.3s;
+  z-index: 99999;
+  animation: byebye 3s both;
 }
 .loader .lettre {
   color: #9356DC;
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   animation: flash 1s linear infinite;
 }
 @media (min-width: 1024px) {
@@ -444,18 +446,14 @@ a {
   animation-delay: 0.8s;
 }
 
-.loader {
-  z-index: 99999;
-  position: absolute;
-  animation: byebye 5s both;
-}
-
 @keyframes byebye {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    display: none;
+    z-index: -100;
   }
 }
 /*APPEAR MENU*/
@@ -511,6 +509,7 @@ a {
   font-size: 1.5em;
   padding: 20px;
   justify-content: center;
+  align-items: center;
   border-radius: 0px 20px 20px 0px;
   float: right;
   margin-left: -30px;
@@ -525,25 +524,30 @@ a {
 
 /*HEART HOME*/
 .hearts {
-  float: right;
-  font-size: 1.2em;
-  padding-right: 1.5em;
-  padding-top: 0.5em;
-}
-.hearts .empty-heart {
-  position: absolute;
-  opacity: 0;
-}
-.hearts .fill-heart {
   position: relative;
-  opacity: 1;
+  float: right;
+  display: flex;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  cursor: pointer;
 }
-.hearts .fill-heart:hover {
+
+.empty {
+  position: absolute;
+  font-size: 1.5em;
+  color: black;
+}
+
+.full {
+  position: absolute;
+  font-size: 1.5em;
+  -webkit-text-fill-color: transparent;
+}
+.full:hover {
   animation: lova 1s ease-in-out;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: content-box;
+  background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
 }
 
 @keyframes lova {
