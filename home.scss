@@ -5,6 +5,7 @@
     background-color: rgb(234, 234, 234);
     padding-top: 2px;
     padding-bottom: 2px;
+    border-top: 3px solid lightgrey;
     }
     .fa-map-marker-alt{
     padding-right: 15px;}
@@ -73,12 +74,13 @@
     flex-wrap: wrap;
     border-radius: 1.5em;
     padding:0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     margin-left: 2em;
     margin-right: 1em;
     background: $color-background;
+    box-shadow: 0 0 10px lightgray;
     &:hover{
-        box-shadow: 0 0 10px lightgray;
+        box-shadow: 0 0 15px lightgray;
         background: rgb(248,237,258);
         cursor: pointer;
         .stepsicons{

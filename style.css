@@ -69,6 +69,7 @@ a {
   background-color: #eaeaea;
   padding-top: 2px;
   padding-bottom: 2px;
+  border-top: 3px solid lightgrey;
 }
 
 .fa-map-marker-alt {
@@ -144,13 +145,14 @@ a {
   flex-wrap: wrap;
   border-radius: 1.5em;
   padding: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   margin-left: 2em;
   margin-right: 1em;
   background: #f6f6f6;
+  box-shadow: 0 0 10px lightgray;
 }
 .steps:hover {
-  box-shadow: 0 0 10px lightgray;
+  box-shadow: 0 0 15px lightgray;
   background: #f8edff;
   cursor: pointer;
 }
@@ -304,10 +306,11 @@ a {
   padding-left: 1em;
   margin-bottom: 0.8em;
   border-radius: 20px;
-  height: 4.4em;
+  height: 4em;
   box-shadow: 3px 3px 7px lightgrey;
 }
 .choice .price {
+  font-size: 0.8em;
   float: right;
   margin-top: 0.1em;
   margin-right: 3em;
@@ -315,9 +318,9 @@ a {
   font-weight: bold;
 }
 .choice .subtitle {
+  font-size: 0.8em;
   font-weight: lighter;
   position: absolute;
-  width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -330,13 +333,14 @@ a {
 }
 .choice .plate {
   font-weight: bold;
-  width: 80%;
+  width: 85%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-top: 0.7em;
   padding-bottom: 0.5em;
   margin: 0;
+  font-size: 0.9em;
 }
 
 .SORT {
@@ -492,8 +496,7 @@ a {
   display: flex;
   color: white;
   font-size: 0%;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.4s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .choice:hover {
@@ -513,6 +516,8 @@ a {
 }
 .choice:hover .slide-in .fa-check-circle {
   justify-content: center;
+  transform: rotate(1turn);
+  transition: 0.8s;
 }
 
 .txt-choice {
